@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Observer.js"></script>
+    <script src="Watcher.js"></script>
+    <script src="Compile.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div>
+            <div>
+                nihao
+                <div>
+                    {{name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        new MyVue({
+          el:"#root",
+          data: {
+            name: "data"
+          }
+        })
+    </script>
+</body>
+</html>
